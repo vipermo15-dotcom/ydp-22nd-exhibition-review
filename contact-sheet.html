@@ -116,6 +116,14 @@ const gridSpecial = document.getElementById('grid-special');
 special.forEach(([f,nm,note])=>{
   gridSpecial.innerHTML += `<div class="card flag"><img src="images/${f}" loading="lazy"><div class="cap"><div class="no">특이사항</div><div class="nm">${nm}</div><div class="meta">${note}</div></div></div>`;
 });
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const h = document.body.scrollHeight;
+    const style = document.createElement('style');
+    style.textContent = `@media print { @page { size: 1000px ${h + 40}px; margin: 0; } body{-webkit-print-color-adjust:exact;print-color-adjust:exact;} }`;
+    document.head.appendChild(style);
+  }, 300);
+});
 </script>
 </body>
 </html>

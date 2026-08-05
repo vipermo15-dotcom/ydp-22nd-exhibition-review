@@ -127,6 +127,14 @@ const grid = document.getElementById('grid-unknown');
 unknown.forEach((f,i)=>{
   grid.innerHTML += `<div class="card unknown"><img src="images/${f}_thumb.jpg" loading="lazy"><div class="cap"><div class="no">미확인 ${i+1}</div><div class="qbox">작가 성함: _______________</div></div></div>`;
 });
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const h = document.body.scrollHeight;
+    const style = document.createElement('style');
+    style.textContent = `@media print { @page { size: 1000px ${h + 40}px; margin: 0; } body{-webkit-print-color-adjust:exact;print-color-adjust:exact;} }`;
+    document.head.appendChild(style);
+  }, 300);
+});
 </script>
 </body>
 </html>
