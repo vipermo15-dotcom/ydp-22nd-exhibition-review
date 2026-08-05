@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>원본사진 콘택트시트 — 제22회 영등포미술협회 정기전</title>
+<style>
+  :root{
+    --bg:#16181d; --panel:#1f232b; --text:#e8e6df; --text-soft:#a7a89e; --muted:#7c7d75;
+    --line:#2c3038; --accent:#cbab68; --gold-dp:#8f6f34; --ok:#6fae82; --warn:#d99a5b;
+    --serif:'Nanum Myeongjo','Apple Myungjo',Georgia,serif;
+    --sans:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',-apple-system,sans-serif;
+    --mono:'SF Mono',ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);}
+  .wrap{max-width:1400px;margin:0 auto;padding:36px 24px 90px;}
+  h1{font-family:var(--serif);font-size:1.7rem;margin:0 0 6px;}
+  .sub{color:var(--text-soft);font-size:.92rem;margin:0 0 6px;}
+  .stat{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 8px;}
+  .stat span{font-family:var(--mono);font-size:.76rem;border:1px solid var(--line);background:var(--panel);
+    padding:6px 12px;border-radius:999px;color:var(--text-soft);}
+  .stat b{color:var(--accent);}
+
+  .grouptag{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;
+    margin:38px 0 14px;display:flex;align-items:center;gap:12px;}
+  .grouptag::after{content:"";flex:1;height:1px;background:var(--line);}
+  .grouptag.warn{color:var(--warn);}
+  .note{font-size:.84rem;color:var(--text-soft);background:rgba(203,171,104,.08);border-left:3px solid var(--accent);
+    border-radius:8px;padding:11px 14px;margin-bottom:16px;line-height:1.6;}
+  .note.warn{border-left-color:var(--warn);background:rgba(217,154,91,.1);}
+  .note b{color:var(--text);}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .card img{width:100%;height:160px;object-fit:contain;background:#0d0f13;display:block;}
+  .card .cap{padding:8px 9px;}
+  .card .no{font-family:var(--mono);font-size:.66rem;color:var(--accent);}
+  .card .nm{font-size:.86rem;font-weight:700;margin-top:1px;}
+  .card.flag{border-color:var(--warn);}
+  .card .tag{display:inline-block;font-family:var(--mono);font-size:.62rem;color:var(--warn);
+    border:1px solid var(--warn);border-radius:4px;padding:1px 5px;margin-top:4px;}
+  .card .meta{font-family:var(--mono);font-size:.62rem;color:var(--muted);margin-top:3px;}
+
+  footer{margin-top:50px;padding-top:18px;border-top:1px solid var(--line);font-size:.78rem;color:var(--muted);line-height:1.7;}
+  footer a{color:var(--accent);}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>원본사진 콘택트시트</h1>
+  <p class="sub">타임사진학원 원장님 촬영본 · 2026-08-04 수령 · 총 58개 파일 검토용 (썸네일)</p>
+  <div class="stat">
+    <span>작가 확인됨 <b>44</b>점</span>
+    <span>작가 미확인 <b>11</b>점</span>
+    <span>중복/저해상도 <b>2</b>건</span>
+  </div>
+
+  <div class="grouptag">✅ 작가 확인됨 — 번호순 (015~056, 42점)</div>
+  <div class="note"><b>참여 작가 명단 초안</b>으로 그대로 활용 가능. 순서는 촬영 파일번호 기준이며, 실제 전시 노출 순서는 회장님 확인 필요.</div>
+  <div class="grid" id="grid-named"></div>
+
+  <div class="grouptag warn">⚠️ 작가 미확인 — 11점 (작가명 매칭 필요)</div>
+  <div class="note warn">
+    파일명이 <code>여의도문화원</code>(카메라 자동 파일명)으로 되어 있어 작가명이 없습니다. 번호 결번(001~014 중 005~014 추정)과 위치상
+    <b>015번(박유섭) 이전 순서</b>로 보이며, 서예·수묵화·채색화가 섞여 있습니다.
+  </div>
+  <div class="grid" id="grid-unknown"></div>
+
+  <div class="grouptag warn">⚠️ 기타 확인 필요</div>
+  <div class="grid" id="grid-special"></div>
+
+  <footer>
+    콘택트시트 · 제22회 영등포미술협회 정기전 · 2026-08-05<br>
+    대표 이미지 후보와 확인 요청은 <a href="confirm.html">확인 요청 페이지</a>를 참고해 주세요.
+  </footer>
+</div>
+
+<script>
+const named = [
+["015","박유섭"],["016","원혜민"],["017","박영희"],["018","최선경"],["019","이갑진"],
+["020","송숙미"],["021","민병분"],["022","유춘자"],["023","강광일"],["024","권의철"],
+["025","전인숙"],["026","송미선"],["027","이한"],["028","함수정"],["029","염태은"],
+["030","이시형"],["031","김효선"],["032","한은옥"],["033","권재옥"],["034","정상애"],
+["035","최영미"],["036","김화선"],["037","이인숙"],["038","장영숙"],["039","김행미"],
+["040","남인숙"],["041","신현지"],["042","김대성"],["043","서희정"],["044","김호연"],
+["045","김선희"],["046","김성빈"],["047","김복신"],["048","이애숙"],["049","정연조"],
+["050","이정자"],["051","김서출"],["052","송진영"],["053","한무정"],["054","양예란"],
+["055","김원자 (회장)"],["056","홍영숙 (파일명 오타: 횽영숙)"]
+];
+const fileOverride = {"055":"김원자055_thumb.jpg","056":"횽영숙056_thumb.jpg"};
+const gridNamed = document.getElementById('grid-named');
+named.forEach(([no,name])=>{
+  const file = fileOverride[no] || `${name.replace(' (회장)','')}${no}_thumb.jpg`;
+  gridNamed.innerHTML += `<div class="card"><img src="images/${file}" loading="lazy"><div class="cap"><div class="no">No.${no}</div><div class="nm">${name}</div></div></div>`;
+});
+
+const unknown = [
+"20260803_여의도문화원13749005","20260803_여의도문화원13752006","20260803_여의도문화원13755007",
+"20260803_여의도문화원13757008","20260803_여의도문화원13758009","20260803_여의도문화원13762010",
+"20260803_여의도문화원13764011","20260803_여의도문화원13765012","20260803_여의도문화원13769013",
+"20260803_여의도문화원13772014","20260803_여의도문화원13746057"
+];
+const gridUnknown = document.getElementById('grid-unknown');
+unknown.forEach((f,i)=>{
+  gridUnknown.innerHTML += `<div class="card flag"><img src="images/${f}_thumb.jpg" loading="lazy"><div class="cap"><div class="no">미확인 ${i+1}</div><div class="nm">작가명 ?</div><div class="tag">확인필요</div></div></div>`;
+});
+
+const special = [
+  ["김옥수 작품1(60.6x72.7cm)oil on canvas (1)_thumb.jpg","김옥수","60.6×72.7cm · oil on canvas (사이즈·재료 기재됨)"],
+  ["윤정애(250908)13_65x95-5cm_thumb.jpg","윤정애","65×95.5cm (사이즈 기재됨, 번호체계 밖)"],
+  ["KakaoTalk_20260730_111504656_thumb.jpg","작가 ?","카톡 전송본 · 원본 대비 저해상도(560KB, 인쇄 부적합 가능성)"],
+  ["김원자055 copy_thumb.jpg","김원자 (중복)","055 원본과 동일 해상도 8053×6294 · 완전 중복으로 추정, 제외 가능"]
+];
+const gridSpecial = document.getElementById('grid-special');
+special.forEach(([f,nm,note])=>{
+  gridSpecial.innerHTML += `<div class="card flag"><img src="images/${f}" loading="lazy"><div class="cap"><div class="no">특이사항</div><div class="nm">${nm}</div><div class="meta">${note}</div></div></div>`;
+});
+</script>
+</body>
+</html>

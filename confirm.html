@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>회장님 확인 요청 — 제22회 영등포미술협회 정기전</title>
+<meta name="description" content="대표 이미지 후보 8점 확인 및 작가 미확인 작품 11점 확인 요청">
+<style>
+  :root{
+    --navy-ink:#1c2b4a; --navy:#2e4468; --slate:#5a7291;
+    --gold:#b28e4e; --gold-dp:#8f6f34; --cream:#f6f2e9; --ivory:#fbf8f1;
+    --bg:#ece7db; --panel:#fbf8f1; --text:#22304d; --text-soft:#5a6377;
+    --line:#ded5c2; --accent:#8f6f34; --warn:#a8532f; --warn-bg:#f7e9e2;
+    --serif:'Nanum Myeongjo','Apple Myungjo',Georgia,serif;
+    --sans:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',-apple-system,sans-serif;
+    --mono:'SF Mono',ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1000px;margin:0 auto;padding:32px 20px 90px;}
+
+  .hero{text-align:center;padding:30px 20px;border-radius:14px;margin-bottom:8px;
+    background:linear-gradient(180deg,#faf7ef,#f2ecdf);border:1px solid var(--line);}
+  .hero .kick{font-family:var(--serif);letter-spacing:.34em;text-transform:uppercase;color:var(--gold-dp);font-size:.78rem;font-weight:700;}
+  .hero h1{font-family:var(--serif);color:var(--navy-ink);font-size:clamp(1.3rem,3.4vw,1.8rem);margin:10px 0 4px;}
+  .hero p{color:var(--slate);font-size:.92rem;margin:0;font-family:var(--serif);font-style:italic;}
+
+  .intro{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;
+    padding:16px 20px;margin:20px 0 8px;font-size:.92rem;line-height:1.7;color:var(--text-soft);}
+  .intro b{color:var(--text);}
+
+  .grouptag{font-size:.8rem;letter-spacing:.1em;color:var(--accent);font-weight:700;
+    margin:38px 0 6px;display:flex;align-items:center;gap:10px;}
+  .grouptag::after{content:"";flex:1;height:1px;background:var(--line);}
+  .grouptag .n{font-family:var(--mono);background:var(--navy);color:var(--ivory);border-radius:50%;
+    width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;font-size:.78rem;flex:none;}
+  .groupdesc{font-size:.86rem;color:var(--text-soft);margin-bottom:14px;line-height:1.6;}
+
+  .subhead{font-family:var(--serif);font-weight:700;font-size:1rem;color:var(--navy-ink);margin:22px 0 10px;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 4px 14px -8px rgba(20,25,45,.25);}
+  .card img{width:100%;height:190px;object-fit:contain;background:#fff;display:block;}
+  .card .cap{padding:10px 11px;}
+  .card .no{font-family:var(--mono);font-size:.68rem;color:var(--accent);font-weight:700;}
+  .card .nm{font-size:.92rem;font-weight:700;color:var(--text);margin-top:1px;}
+  .card .why{font-size:.78rem;color:var(--text-soft);margin-top:5px;line-height:1.5;}
+  .card.unknown{border-color:var(--warn);}
+  .card .qbox{margin-top:8px;border:1px dashed var(--warn);border-radius:6px;padding:6px 8px;
+    font-size:.72rem;color:var(--warn);font-family:var(--mono);}
+
+  .decision{background:var(--warn-bg);border:1px solid var(--warn);border-radius:10px;padding:14px 18px;
+    margin-top:26px;font-size:.88rem;color:#6b3a22;line-height:1.7;}
+  .decision b{color:var(--warn);}
+
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:.8rem;color:#8a8578;line-height:1.8;}
+  footer a{color:var(--accent);}
+  .kakaobox{background:#fef4d8;border:1px solid #e5cf8a;border-radius:10px;padding:16px 18px;margin-top:14px;font-size:.86rem;line-height:1.7;color:#5a4a1c;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="kick">22nd Exhibition · 확인 요청</div>
+    <h1>회장님께 확인 부탁드립니다</h1>
+    <p>대표 이미지 후보 제안 &amp; 작가 미확인 작품 11점</p>
+  </div>
+
+  <div class="intro">
+    보내주신 <b>사진 58점 잘 받았습니다.</b> 홍보물(포스터·인스타·전광판·미디어월) 제작을 위해
+    ① 대표로 사용할 이미지 후보를 저희가 먼저 골라봤습니다 — <b>확인/변경 부탁드립니다.</b><br>
+    ② 파일명에 작가님 성함이 없는 작품 11점이 있어 <b>어느 작가님 작품인지</b> 알려주시면 감사하겠습니다.
+  </div>
+
+  <div class="grouptag"><span class="n">1</span>대표 이미지 후보 제안 (8점)</div>
+  <div class="groupdesc">전시 톤(초대장 기준: 네이비·골드·명조)에 맞춰 격조 있는 수묵/풍경 작품과, 전시의 다채로움을 보여줄 화사한 작품을 균형 있게 골라봤습니다. 최종 선정은 회장님·협회 의견을 따르겠습니다.</div>
+
+  <div class="subhead">메인 포스터 · 인스타용 (세로, 차분한 톤)</div>
+  <div class="grid">
+    <div class="card"><img src="images/강광일023_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.023</div><div class="nm">강광일</div><div class="why">흑백 수묵 산수 — 강렬한 붓터치, 네이비 배경과 조화</div></div></div>
+    <div class="card"><img src="images/김화선036_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.036</div><div class="nm">김화선</div><div class="why">흑백 수묵 풍경 — 세로로 길어 포스터 상단 구성에 적합</div></div></div>
+    <div class="card"><img src="images/박영희017_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.017</div><div class="nm">박영희</div><div class="why">수채 해안 풍경 — 은은한 톤, 온화한 무드</div></div></div>
+  </div>
+
+  <div class="subhead">미디어월 · 입구전광판용 (가로, 파노라마 스케일)</div>
+  <div class="grid">
+    <div class="card"><img src="images/정연조049_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.049</div><div class="nm">정연조</div><div class="why">청록 해안절벽 — 초광폭 파노라마에 가장 잘 어울림</div></div></div>
+    <div class="card"><img src="images/김대성042_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.042</div><div class="nm">김대성</div><div class="why">패러글라이딩 풍경 — 시원한 스케일감, 역동적</div></div></div>
+    <div class="card"><img src="images/서희정043_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.043</div><div class="nm">서희정</div><div class="why">봄 화조도 — 화사하고 장식적</div></div></div>
+  </div>
+
+  <div class="subhead">다양성 강조용 (화사한 색감)</div>
+  <div class="grid">
+    <div class="card"><img src="images/신현지041_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.041</div><div class="nm">신현지</div><div class="why">국화 그림 — 연두·노랑 화사한 색감</div></div></div>
+    <div class="card"><img src="images/횽영숙056_thumb.jpg" loading="lazy"><div class="cap"><div class="no">No.056</div><div class="nm">홍영숙</div><div class="why">화사한 꽃 그림 — 밝고 생동감 있음</div></div></div>
+  </div>
+
+  <div class="decision">
+    <b>확인 부탁드립니다 —</b> 위 8점 중 메인 포스터에 크게 쓸 <b>1점</b>을 정해주시거나, 저희가 제안한 순서대로 진행해도 괜찮을지 알려주세요.
+    또한 <b>회장님 작품(No.055)</b>을 대표 이미지에 포함할지, 별도로 예우 차원에서 소개할지도 의견 부탁드립니다.
+  </div>
+
+  <div class="grouptag"><span class="n">2</span>작가 미확인 작품 (11점)</div>
+  <div class="groupdesc">파일명이 카메라 자동 생성명(<code>여의도문화원...</code>)으로 되어 있어 작가 성함을 알 수 없습니다. 서예·수묵화·채색화가 섞여 있으며, 번호 순서상 015번(박유섭 작가님) 이전으로 추정됩니다. <b>각 작품 아래 성함을 적어 회신해 주시면</b> 참여작가 명단에 반영하겠습니다.</div>
+
+  <div class="grid" id="grid-unknown"></div>
+
+  <div class="kakaobox">
+    <b>📱 카카오톡으로 답변 주실 때</b><br>
+    사진 번호(예: "미확인 3 = 김ㅇㅇ")로 답장 주시면 됩니다. 편하신 방법으로 알려주세요.
+  </div>
+
+  <footer>
+    회장님 확인 요청 문서 · 제22회 영등포미술협회 정기전 · 2026-08-05<br>
+    전체 원본사진 목록은 <a href="contact-sheet.html">콘택트시트</a>에서 확인하실 수 있습니다.
+  </footer>
+</div>
+
+<script>
+const unknown = [
+"20260803_여의도문화원13749005","20260803_여의도문화원13752006","20260803_여의도문화원13755007",
+"20260803_여의도문화원13757008","20260803_여의도문화원13758009","20260803_여의도문화원13762010",
+"20260803_여의도문화원13764011","20260803_여의도문화원13765012","20260803_여의도문화원13769013",
+"20260803_여의도문화원13772014","20260803_여의도문화원13746057"
+];
+const grid = document.getElementById('grid-unknown');
+unknown.forEach((f,i)=>{
+  grid.innerHTML += `<div class="card unknown"><img src="images/${f}_thumb.jpg" loading="lazy"><div class="cap"><div class="no">미확인 ${i+1}</div><div class="qbox">작가 성함: _______________</div></div></div>`;
+});
+</script>
+</body>
+</html>
