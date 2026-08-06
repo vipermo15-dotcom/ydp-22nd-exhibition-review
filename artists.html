@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>참여작가 시트 — 제22회 영등포미술협회 정기전</title>
+<style>
+  :root{
+    --navy-ink:#1c2b4a; --navy:#2e4468; --slate:#5a7291;
+    --gold:#b28e4e; --gold-dp:#8f6f34; --ivory:#fbf8f1;
+    --bg:#ece7db; --panel:#fbf8f1; --text:#22304d; --text-soft:#5a6377;
+    --line:#ded5c2; --accent:#8f6f34; --warn:#a8532f; --warn-bg:#f7e9e2; --ok:#3f7d5a; --ok-bg:#eaf2ec;
+    --serif:'Nanum Myeongjo','Apple Myungjo',Georgia,serif;
+    --sans:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+    --mono:'SF Mono',ui-monospace,Menlo,Consolas,monospace;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;
+    line-height:1.7;font-size:19px;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 0 70px;}
+
+  .hero{padding:38px 24px 32px;text-align:center;background:linear-gradient(180deg,#faf7ef,#f2ecdf);
+    border-bottom:1px solid var(--line);}
+  .hero .kick{font-family:var(--serif);letter-spacing:.4em;text-transform:uppercase;color:var(--gold-dp);
+    font-size:14px;font-weight:700;}
+  .hero .sprig{width:44px;height:44px;margin:14px 0;}
+  .hero h1{font-family:var(--serif);color:var(--navy-ink);font-size:24px;margin:6px 0;line-height:1.35;font-weight:700;}
+  .hero .doctitle{font-family:var(--serif);font-size:19px;color:var(--navy);margin-top:4px;}
+
+  .stats{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;padding:18px 20px 0;}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:15px;color:var(--text-soft);}
+  .stat b{color:var(--accent);font-family:var(--serif);}
+
+  section{padding:26px 22px;border-bottom:1px solid var(--line);}
+  .sechead{display:flex;align-items:center;gap:10px;margin-bottom:6px;}
+  .sechead .dot{width:14px;height:14px;border-radius:4px;flex:none;}
+  .sechead .dot.ok{background:var(--ok);}
+  .sechead .dot.warn{border:2px dashed var(--warn);}
+  .sechead h2{font-family:var(--serif);font-size:21px;color:var(--navy-ink);margin:0;font-weight:700;}
+  .sechead .cnt{margin-left:auto;font-family:var(--serif);color:var(--accent);font-weight:700;font-size:16px;}
+  .subnote{font-size:15px;color:var(--text-soft);margin:8px 0 16px;line-height:1.7;}
+
+  .namegrid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  .namegrid .n{background:var(--panel);padding:12px 14px;font-family:var(--serif);font-size:18px;color:var(--navy-ink);}
+  .namegrid .n.chair{color:var(--gold-dp);font-weight:700;}
+
+  .pendingcard{background:var(--panel);border:2px dashed var(--warn);border-radius:12px;
+    padding:14px 16px;margin-bottom:10px;display:flex;align-items:center;gap:12px;}
+  .pendingcard .no{font-family:var(--mono);font-size:13px;color:var(--warn);font-weight:700;
+    background:var(--warn-bg);border-radius:6px;padding:4px 8px;flex:none;}
+  .pendingcard .fill{flex:1;font-family:var(--serif);color:var(--text-soft);font-size:16px;}
+  .pendingcard .src{font-family:var(--mono);font-size:11px;color:#a89a86;display:block;margin-top:2px;}
+
+  .linkbox{background:var(--navy);color:var(--ivory);border-radius:12px;padding:16px 18px;margin-top:14px;font-size:15px;line-height:1.7;}
+  .linkbox a{color:#e0c98a;word-break:break-all;}
+
+  footer{padding:26px 22px;font-size:14px;color:var(--text-soft);line-height:1.8;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="kick">22nd Exhibition</div>
+    <svg class="sprig" viewBox="0 0 40 40" fill="none"><path d="M20 36V13" stroke="#b28e4e" stroke-width="1.3"/><path d="M20 17c-4.5-1-8-4.5-8-9 4.5 0 8 3.5 8 9Z" fill="#b28e4e" opacity=".9"/><path d="M20 21c4.5-1 8-4.5 8-9-4.5 0-8 3.5-8 9Z" fill="#b28e4e" opacity=".9"/><path d="M20 28c-3.5-.8-6.5-3.5-6.5-7.5 3.5 0 6.5 3 6.5 7.5Z" fill="#b28e4e" opacity=".65"/></svg>
+    <h1>제22회 영등포미술협회 정기전</h1>
+    <div class="doctitle">참여 작가 시트</div>
+  </div>
+
+  <div class="stats">
+    <span class="stat">확인 <b>44명</b></span>
+    <span class="stat">확인 중 <b>11명</b></span>
+    <span class="stat">총원 <b>55명</b></span>
+  </div>
+
+  <section>
+    <div class="sechead"><span class="dot ok"></span><h2>확인된 작가</h2><span class="cnt">44명</span></div>
+    <div class="subnote">사진 파일명 기준 확인. 전시 노출 순서는 회장님 확정 전까지 임시(촬영 순서)입니다.</div>
+    <div class="namegrid" id="namegrid"></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="dot warn"></span><h2>작가 미확인</h2><span class="cnt">11명</span></div>
+    <div class="subnote">파일명이 카메라 자동생성(<code>여의도문화원…</code>)으로 되어 있어 작가명을 알 수 없습니다. 서예·수묵화·채색화가 섞여 있으며, 015번(박유섭) 이전 순서로 추정됩니다.</div>
+    <div id="pendinglist"></div>
+    <div class="linkbox">
+      📷 사진으로 직접 확인하시려면 —<br>
+      <a href="confirm.html">확인 요청 페이지 (사진 포함)</a>
+    </div>
+  </section>
+
+  <footer>
+    제22회 영등포미술협회 정기전 · 참여작가 시트<br>
+    작성 2026-08-05 · 갱신 2026-08-06
+  </footer>
+</div>
+
+<script>
+const named = [
+  ["박유섭"],["원혜민"],["박영희"],["최선경"],["이갑진"],["송숙미"],["민병분"],["유춘자"],
+  ["강광일"],["권의철"],["전인숙"],["송미선"],["이한"],["함수정"],["염태은"],["이시형"],
+  ["김효선"],["한은옥"],["권재옥"],["정상애"],["최영미"],["김화선"],["이인숙"],["장영숙"],
+  ["김행미"],["남인숙"],["신현지"],["김대성"],["서희정"],["김호연"],["김선희"],["김성빈"],
+  ["김복신"],["이애숙"],["정연조"],["이정자"],["김서출"],["송진영"],["한무정"],["양예란"],
+  ["김원자 (회장)", true],["홍영숙"],["김옥수"],["윤정애"]
+];
+const grid = document.getElementById('namegrid');
+named.forEach(([name, chair])=>{
+  grid.innerHTML += `<div class="n${chair ? ' chair' : ''}">${name}</div>`;
+});
+
+const pending = [
+  "여의도문화원13749005","여의도문화원13752006","여의도문화원13755007","여의도문화원13757008",
+  "여의도문화원13758009","여의도문화원13762010","여의도문화원13764011","여의도문화원13765012",
+  "여의도문화원13769013","여의도문화원13772014","여의도문화원13746057"
+];
+const plist = document.getElementById('pendinglist');
+pending.forEach((src,i)=>{
+  plist.innerHTML += `<div class="pendingcard"><span class="no">미확인 ${i+1}</span><span class="fill">작가 성함 확인 중<span class="src">${src}</span></span></div>`;
+});
+</script>
+</body>
+</html>

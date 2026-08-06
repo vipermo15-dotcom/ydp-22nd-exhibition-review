@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>기획안 — 제22회 영등포미술협회 정기전</title>
+<style>
+  :root{
+    --navy-ink:#1c2b4a; --navy:#2e4468; --slate:#5a7291;
+    --gold:#b28e4e; --gold-dp:#8f6f34; --ivory:#fbf8f1;
+    --bg:#ece7db; --panel:#fbf8f1; --text:#22304d; --text-soft:#5a6377;
+    --line:#ded5c2; --accent:#8f6f34; --warn:#a8532f; --warn-bg:#f7e9e2; --ok:#3f7d5a; --ok-bg:#eaf2ec;
+    --serif:'Nanum Myeongjo','Apple Myungjo',Georgia,serif;
+    --sans:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',-apple-system,BlinkMacSystemFont,sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);-webkit-font-smoothing:antialiased;
+    line-height:1.7;font-size:19px;}
+  .wrap{max-width:640px;margin:0 auto;padding:0 0 70px;}
+
+  .hero{padding:38px 24px 32px;text-align:center;background:linear-gradient(180deg,#faf7ef,#f2ecdf);
+    border-bottom:1px solid var(--line);}
+  .hero .kick{font-family:var(--serif);letter-spacing:.4em;text-transform:uppercase;color:var(--gold-dp);
+    font-size:14px;font-weight:700;}
+  .hero .sprig{width:44px;height:44px;margin:14px 0;}
+  .hero h1{font-family:var(--serif);color:var(--navy-ink);font-size:26px;margin:6px 0;line-height:1.35;font-weight:700;}
+  .hero .doctitle{font-family:var(--serif);font-size:20px;color:var(--navy);margin-top:6px;}
+
+  section{padding:30px 22px;border-bottom:1px solid var(--line);}
+  .sechead{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+  .sechead .num{font-family:var(--serif);font-weight:800;color:var(--ivory);background:var(--navy);
+    width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+    font-size:16px;flex:none;}
+  .sechead h2{font-family:var(--serif);font-size:22px;color:var(--navy-ink);margin:0;font-weight:700;}
+
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:12px;}
+  .card .lbl{font-size:13px;color:var(--accent);font-weight:700;letter-spacing:.03em;}
+  .card .val{font-family:var(--serif);font-size:19px;color:var(--navy-ink);font-weight:700;margin-top:5px;line-height:1.5;}
+
+  ul.plain{margin:0;padding-left:22px;}
+  ul.plain li{margin-bottom:10px;}
+  ul.plain b{color:var(--navy-ink);}
+
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--panel);}
+  table{width:100%;border-collapse:collapse;font-size:16px;white-space:nowrap;}
+  th{background:var(--navy);color:var(--ivory);text-align:left;padding:10px 12px;font-size:14px;
+    font-weight:700;position:sticky;top:0;}
+  td{padding:10px 12px;border-top:1px solid var(--line);}
+  tr:nth-child(even) td{background:rgba(178,142,78,.05);}
+
+  .status{display:inline-block;font-size:13px;font-weight:700;padding:3px 10px;border-radius:999px;margin-bottom:2px;}
+  .status.ok{background:var(--ok-bg);color:var(--ok);}
+  .status.warn{background:var(--warn-bg);color:var(--warn);}
+
+  .banner{border-radius:12px;padding:14px 18px;font-size:16px;line-height:1.7;margin-bottom:12px;}
+  .banner.ok{background:var(--ok-bg);border:1px solid var(--ok);color:var(--text);}
+  .banner.warn{background:var(--warn-bg);border:1px solid var(--warn);color:var(--text);}
+  .banner b{color:var(--navy-ink);}
+
+  .steplist{display:flex;flex-direction:column;gap:0;}
+  .step{display:grid;grid-template-columns:74px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);}
+  .step:last-child{border-bottom:none;}
+  .step .date{font-family:var(--serif);color:var(--accent);font-weight:700;font-size:14px;padding-top:2px;}
+  .step .desc b{display:block;color:var(--navy-ink);font-size:17px;}
+  .step .desc span{color:var(--text-soft);font-size:15px;}
+  .step.final .date, .step.final .desc b{color:var(--warn);}
+
+  footer{padding:26px 22px;font-size:14px;color:var(--text-soft);line-height:1.8;text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="kick">22nd Exhibition</div>
+    <svg class="sprig" viewBox="0 0 40 40" fill="none"><path d="M20 36V13" stroke="#b28e4e" stroke-width="1.3"/><path d="M20 17c-4.5-1-8-4.5-8-9 4.5 0 8 3.5 8 9Z" fill="#b28e4e" opacity=".9"/><path d="M20 21c4.5-1 8-4.5 8-9-4.5 0-8 3.5-8 9Z" fill="#b28e4e" opacity=".9"/><path d="M20 28c-3.5-.8-6.5-3.5-6.5-7.5 3.5 0 6.5 3 6.5 7.5Z" fill="#b28e4e" opacity=".65"/></svg>
+    <h1>제22회 영등포미술협회 정기전</h1>
+    <div class="doctitle">홍보물·미디어월 영상 제작 기획안</div>
+  </div>
+
+  <section>
+    <div class="sechead"><span class="num">1</span><h2>프로젝트 개요</h2></div>
+    <div class="card"><div class="lbl">전시 기간</div><div class="val">2026. 9. 2(수) ~ 9. 6(일) 16:00</div></div>
+    <div class="card"><div class="lbl">개전식</div><div class="val">9. 2(수) 오후 4시</div></div>
+    <div class="card"><div class="lbl">장소</div><div class="val">영등포아트스퀘어<br><span style="font-size:15px;color:var(--text-soft);font-weight:400">서울 영등포구 영중로 15, 타임스퀘어 지하 2층</span></div></div>
+    <div class="card"><div class="lbl">관람</div><div class="val">매일 10:00~18:00 (입장마감 17:45) · 무료</div></div>
+    <div class="card"><div class="lbl">최종 납품 마감</div><div class="val" style="color:var(--warn)">2026년 8월 18일(화)</div></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="num">2</span><h2>제작 산출물 6종</h2></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>No</th><th>명칭</th><th>규격</th><th>비고</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>메인 포스터</td><td>210×297mm</td><td>A4·인쇄용</td></tr>
+          <tr><td>2</td><td>인스타그램</td><td>1080×1380px</td><td>4:5</td></tr>
+          <tr><td>3</td><td>입구 전광판</td><td>2000×1200px</td><td>정지 이미지</td></tr>
+          <tr><td>4</td><td>세로형 모니터</td><td>1080×1920px</td><td>정지 이미지</td></tr>
+          <tr><td>5</td><td>T존 전광판</td><td>1440×840px</td><td>이미지/영상</td></tr>
+          <tr><td>6</td><td>미디어월 영상</td><td>10,240×960px</td><td>DXV3·초광폭</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="num">3</span><h2>디자인 방향</h2></div>
+    <div class="banner ok"><b>확정 —</b> 회장님 초대장 톤을 6종 전체에 일관 적용합니다.</div>
+    <ul class="plain">
+      <li><b>컬러</b> — 딥 네이비 수채 번짐 + 골드 포인트 + 아이보리 배경</li>
+      <li><b>타이포</b> — 국문 명조 + 영문 세리프, 얇은 골드 괘선</li>
+      <li><b>모티프</b> — 수채 워시, 금박 텍스처, 보태니컬 잎사귀</li>
+      <li><b>무드</b> — 격조 있고 클래식, 정적이며 품위 있는 미술 전시 톤</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="num">4</span><h2>현재 진행 상황</h2></div>
+    <div class="banner ok"><span class="status ok">완료</span><br>전시 정보 확정, 원본 사진 58점 수령, 홍보물 5종(포스터·인스타·입구전광판·세로형·T존) 두 가지 대표작 트랙(A/B)으로 실물 시안 제작, 미디어월 영상 시안 제작</div>
+    <div class="banner warn"><span class="status warn">확인 필요</span><br>
+      <ul class="plain" style="margin-top:8px">
+        <li>대표 이미지 — 트랙 A(모노톤) / 트랙 B(컬러풀) / 다른 작품 지정</li>
+        <li>미확인 작가 11명 성함 (작품시트 참조)</li>
+        <li>협회 로고 삽입 여부, 문의처 정보</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="num">5</span><h2>미디어월 영상 사양</h2></div>
+    <ul class="plain">
+      <li><b>해상도</b> — 10,240 × 960px, 초광폭(≈10.67:1)</li>
+      <li><b>구성</b> — 좌·정면·우 3분할, 핵심 메시지는 정면에</li>
+      <li><b>코덱</b> — 최종 납품은 Resolume DXV3 변환 (재생 프로그램 전용)</li>
+      <li><b>러닝타임</b> — 10분 이내, 루프 재생</li>
+      <li><b>사운드</b> — 포함 가능 (사계PC 재생 방식)</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="num">6</span><h2>제작 일정</h2></div>
+    <div class="steplist">
+      <div class="step"><div class="date">~8/07</div><div class="desc"><b>정보 확정</b><span>전시명·기간·작가·키비주얼</span></div></div>
+      <div class="step"><div class="date">8/08–11</div><div class="desc"><b>1차 시안</b><span>메인 포스터 컨셉 시안</span></div></div>
+      <div class="step"><div class="date">8/12–13</div><div class="desc"><b>시안 컨펌</b><span>대표 이미지 확정 (미팅)</span></div></div>
+      <div class="step"><div class="date">8/13–16</div><div class="desc"><b>6종 전개 제작</b><span>규격별 최종 제작</span></div></div>
+      <div class="step"><div class="date">8/16–17</div><div class="desc"><b>영상 변환·검수</b><span>미디어월 DXV3 변환·테스트</span></div></div>
+      <div class="step final"><div class="date">8/18</div><div class="desc"><b>최종 납품</b><span>6종 이메일 전달</span></div></div>
+    </div>
+  </section>
+
+  <footer>
+    제22회 영등포미술협회 정기전 · 기획안<br>
+    작성 2026-08-04 · 갱신 2026-08-06
+  </footer>
+</div>
+</body>
+</html>
