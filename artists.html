@@ -84,38 +84,34 @@
 
   <div class="stats">
     <span class="stat">확인 <b>44명</b></span>
-    <span class="stat">추정 매칭 <b>10명</b></span>
-    <span class="stat">미상 <b>1명</b></span>
+    <span class="stat">신규 확정 <b>11명</b></span>
     <span class="stat">총원 <b>55명</b></span>
   </div>
 
   <section>
     <div class="sechead"><span class="dot ok"></span><h2>확인된 작가</h2><span class="cnt">44명</span></div>
-    <div class="subnote">사진 파일명 기준 확인. 전시 노출 순서는 회장님 확정 전까지 임시(촬영 순서)입니다.</div>
+    <div class="subnote">사진 파일명 기준 확인. 전시 노출 순서는 회장님 확정 전까지 임시(촬영 순서)입니다. <b>"이시형"</b>은 22회 공식 카탈로그 명단에 없어 <b>"이시연"</b>(민화분과장)과 동일인일 가능성이 있습니다 — 재확인 필요.</div>
     <div class="namegrid" id="namegrid"></div>
   </section>
 
   <section>
-    <div class="sechead"><span class="dot warn"></span><h2>신규 확보 (매칭 추정)</h2><span class="cnt">10명</span></div>
-    <div class="subnote">2026-08-06 회장님 손글씨 메모로 성함 확보. <b>사진 번호가 메모에 없어 순서대로 추정 매칭</b>한 상태입니다 — 공개 전 반드시 재확인 필요. 장애인복지관 관련 성함이 포함돼 있어, 전시 취지의 "장애인 예술가와 함께" 참여작으로 추정됩니다.</div>
-    <div class="archivebox">🔎 <b>2026-08-07 교차검증</b> — 영등포아트스퀘어 공식 아카이브에서 <a href="https://ydpartsquare.com/아카이브/view/5831575" target="_blank">제20회 정기전(2024) 포스터</a>를 찾아 참여작가 인쇄 명단과 대조했습니다. 우철학·양수길·김성현은 정확히 일치. "박두민"→<b>박수민</b>, "한솔배"→<b>한종배</b>로 손글씨 판독을 정정했습니다(추정, 재확인 필요).</div>
+    <div class="sechead"><span class="dot ok"></span><h2>신규 확보 — 전원 확정</h2><span class="cnt">11명</span></div>
+    <div class="subnote">2026-08-06 회장님 손글씨 메모로 성함 1차 확보 → 2026-08-08 협회 공식 22회 카탈로그로 전원 확정했습니다.</div>
+    <div class="archivebox">✅ <b>2026-08-08 최종 확정</b> — 회장님이 카톡으로 보내주신 <b>22회 공식 전시 카탈로그(발행인 김원자)</b>에서 참여작가 전원의 실명·약력을 확인했습니다. 이 11명은 <b>"영등포장애인복지관 앗뜨(지도 오승규)"</b> 특별 참여 그룹으로, 협회의 연례 "장애인 예술가와 함께" 프로그램 소속입니다. 박성민→<b>박경민</b>, 오양주→<b>조현동</b>으로 정정, 끝까지 미상이었던 1명은 그룹 지도교사 <b>오승규</b>로 확인됐습니다.</div>
     <div id="guesslist"></div>
-    <div class="badge-check">⚠️ 사진-이름 매칭 확인 필요</div>
   </section>
 
   <section>
-    <div class="sechead"><span class="dot warn"></span><h2>작가 미확인</h2><span class="cnt">1명</span></div>
-    <div class="subnote">메모에서 이름 부분이 취소선으로 지워져 있어 판독이 안 됩니다. 회장님께 재확인이 필요합니다.</div>
-    <div id="pendinglist"></div>
+    <div class="sechead"><span class="dot warn"></span><h2>사진 미확보 (카탈로그엔 있음)</h2><span class="cnt">16명</span></div>
+    <div class="subnote">22회 공식 카탈로그 기준 전체 참여작가는 71명입니다. 아래 16명은 카탈로그엔 있지만 저희가 사진을 받지 못한 분들입니다 — 홍보물에 개별 반영이 필요한지 미팅에서 확인 예정입니다.</div>
     <div class="linkbox">
-      📷 사진으로 직접 확인하시려면 —<br>
-      <a href="confirm.html">확인 요청 페이지 (사진 포함)</a>
+      권시영 · 김경영 · 김덕기 · 김미연 · 류경아 · 민오금 · 박선희 · 성해옥 · 이수아 · 이용휘 · 임종예 · 임현자 · 장현숙 · 정란순 · 정영원 · 조창숙 · 최영숙 · 함미자
     </div>
   </section>
 
   <footer>
     제22회 영등포미술협회 정기전 · 참여작가 시트<br>
-    작성 2026-08-05 · 갱신 2026-08-07 (20회 공식 명단 교차검증 반영)
+    작성 2026-08-05 · 갱신 2026-08-08 (22회 공식 카탈로그로 전원 확정)
   </footer>
 </div>
 
@@ -134,28 +130,21 @@ named.forEach(([name, chair])=>{
 });
 
 const guessed = [
-  ["미확인 1","여의도문화원13749005","우철학",null,"hit","✓ 20회 명단과 일치"],
-  ["미확인 2","여의도문화원13752006","양수길",null,"hit","✓ 20회 명단과 일치"],
-  ["미확인 3","여의도문화원13755007","김성현",null,"hit","✓ 20회 명단과 일치"],
-  ["미확인 4","여의도문화원13757008","장채연",null,"miss","20회 명단에 없음 — 신규 회원 추정"],
-  ["미확인 5","여의도문화원13758009","박성민",null,"miss","⚠ 20회엔 \"박경민\"만 있음 — 동명이인 재확인"],
-  ["미확인 6","여의도문화원13762010","김지민",null,"miss","20회 명단에 없음 — 신규 회원 추정"],
-  ["미확인 7","여의도문화원13764011","임은지",null,"miss","20회 명단에 없음 — 신규 회원 추정"],
-  ["미확인 8","여의도문화원13765012","오양주","장애인복지관 강사","miss","20회 명단에 없음 — 올해 신규 참여 추정"],
-  ["미확인 10","여의도문화원13772014","박수민",null,"fix","✎ \"박두민\" → 20회 명단 기준 정정"],
-  ["미확인 11","여의도문화원13746057","한종배",null,"fix","✎ \"한솔배\" → 20회 명단 기준 정정"]
+  ["미확인 1","여의도문화원13749005","우철학",null,"hit","✓ 22회 공식 카탈로그 일치"],
+  ["미확인 2","여의도문화원13752006","양수길",null,"hit","✓ 22회 공식 카탈로그 일치"],
+  ["미확인 3","여의도문화원13755007","김성현",null,"hit","✓ 22회 공식 카탈로그 일치"],
+  ["미확인 4","여의도문화원13757008","장채연",null,"hit","✓ 22회 공식 카탈로그 일치"],
+  ["미확인 5","여의도문화원13758009","박경민",null,"fix","✎ \"박성민\" → 22회 카탈로그 기준 정정"],
+  ["미확인 6","여의도문화원13762010","김지민",null,"hit","✓ 22회 공식 카탈로그 일치"],
+  ["미확인 7","여의도문화원13764011","임은지",null,"hit","✓ 22회 공식 카탈로그 일치"],
+  ["미확인 8","여의도문화원13765012","조현동",null,"fix","✎ \"오양주\" → 22회 카탈로그 기준 정정"],
+  ["미확인 9","여의도문화원13769013","오승규","앗뜨 그룹 지도교사","fix","✎ 판독 불가 → 카탈로그로 확인(참여작가 아닌 지도교사)"],
+  ["미확인 10","여의도문화원13772014","박수민",null,"hit","✓ 22회 공식 카탈로그 일치"],
+  ["미확인 11","여의도문화원13746057","한종배",null,"hit","✓ 22회 공식 카탈로그 일치"]
 ];
 const glist = document.getElementById('guesslist');
 guessed.forEach(([no,src,name,note,vclass,vlabel])=>{
   glist.innerHTML += `<div class="guesscard"><span class="no">${no}</span><span class="nm">${name}${note ? `<span class="note">${note}</span>` : ''}<span class="verify ${vclass}">${vlabel}</span><span class="note" style="font-family:'SF Mono',monospace">${src}</span></span></div>`;
-});
-
-const pending = [
-  ["미확인 9","여의도문화원13769013"]
-];
-const plist = document.getElementById('pendinglist');
-pending.forEach(([no,src])=>{
-  plist.innerHTML += `<div class="pendingcard"><span class="no">${no}</span><span class="fill">작가 성함 확인 중<span class="src">${src}</span></span></div>`;
 });
 </script>
 </body>
